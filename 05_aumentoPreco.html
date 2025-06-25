@@ -9,9 +9,18 @@
     
     //Entrada
 
+    let preco = Number(prompt(`Informe o preço de seu produto`));
 
     //Processamento
 
+    
+    (preco <= 280) ?
+     alert(`O valor do seu produto depois do aumento é de ${preco * 1.2}.`) :
+    (preco <= 750) ?
+     alert(`O resultado com o produto com o aumento do preco é ${preco * 1.15}`) :
+    (preco <= 1500) ?
+     alert(`O resultado com o aumento do preço é ${preco * 1.1}`) :
+     alert(`O resultado com o aumento de preço é ${preco * 1.05}`);
     
     //Saída
 
