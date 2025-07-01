@@ -11,9 +11,20 @@
 
     //Entrada
 
+    let salario = Number(prompt(`Informe o seu salário.`));
+    let agua = Number(prompt(`Informe o valor da sua conta de água.`));
+    let eletrica = Number(prompt(`Informe o valor da sua conta de energia elétrica.`));
+    let telefone = Number(prompt(`Informe o valor da sua conta de telefone.`));
+    let mercado = Number(prompt(`Informe o valor que você gasta no mercado.`));
 
     //Processamento
 
+    let gasto = agua + eletrica + telefone + mercado;
+    let sobra = salario - gasto;
+
+    (salario >= gasto) ? 
+    alert(`Sobrou ${sobra} reais.`) : 
+    alert(`Faltou ${Math.abs(sobra)} reais`) ;
     
     //Saída
     

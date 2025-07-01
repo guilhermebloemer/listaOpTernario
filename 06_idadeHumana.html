@@ -9,10 +9,22 @@
 
     //Entrada
     
+    let idadeCao = Number(prompt(`Informe quantos anos seu cão tem.`));
+    let porte = prompt(`Informe qual o porte do seu cão (pequeno, medio ou grande).`).replace("é", "e").toLowerCase()
+    //
 
-    //Processamento
+    let idadeHum = 0;
 
-    
+    (porte === "pequeno" ) ? 
+    idadeHum = (idadeCao * 5) :
+    (porte === "medio" ) ?
+    idadeHum = (idadeCao * 6) :
+    (porte === "grande" ) ?
+    idadeHum = (idadeCao * 7) :
+
+    alert(`Invalido!`);
+
+    alert(`A idade do seu cão é de: ${idadeHum} `)
     //Saída
 
 </script>

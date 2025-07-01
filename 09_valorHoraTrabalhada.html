@@ -9,10 +9,20 @@
 
     //Entrada
 
-
+    let horasTrab = Number(prompt(`Informe as suas horas trabalhadas semanalmente.`));
+    let receba = Number(prompt(`Informe o quanto voce recebe por hora trabalhada.`));
     //Processamento
 
-    
+
+
+    (isNaN(horasTrab)) ?
+    alert(`Valor Inválido`)
+    (horasTrab >= 45) ?
+    alert(`Seu salário é de ${(horasTrab * receba)} reais`) :
+    (horasTrab >= 60) ?
+    alert(`Seu salário é de ${(horasTrab * receba) * 1.20 } reais`) :
+    (horasTrab > 60) :
+    alert(`Seu salário é de ${(horasTrab *receba) * 1.30} reais `) ;
     //Saída
 
-</script>
+    </script>
