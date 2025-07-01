@@ -7,11 +7,23 @@
 
     //Entrada
 
+    let precoCombustivel = Number(prompt(`Informe o preço do litro do combustível.`))
+    let precoLitros = Number(prompt(`Informe a quantidade de litros utilizados para se deslocar para o trabalho diariamente.`))
+    let precoTransporte = Number(prompt(`Informe também o preço do transporte público que você paga diariamente.`))
 
     //Processamento
 
-    
+
+    let totalTransport = (precoTransporte / 2)
+
+    isNaN(precoCombustivel) || isNaN(precoLitros) || isNaN(precoTransporte)
+        ? alert(`Valor inválido!`)
+        : (precoCombustivel * precoLitros * 2) > (precoTransporte * 2)
+            ? alert(`Ir de transporte público é mais barato, assim voce gastará ${(precoTransporte).toFixed(2)} para a ida, para a volta custará ${(precoTransporte).toFixed(2)} para a volta.`)
+            : alert(`Ir com o seu próprio transporte é mais barato, assim voce gastará ${(precoCombustivel * precoLitros).toFixed(2)} para a ida, para a volta custará ${(precoLitros * precoCombustivel).toFixed(2)}.`) 
+
+
     //Saída
 
-    
+
 </script>

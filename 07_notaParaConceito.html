@@ -13,8 +13,20 @@
 
     let nota = Number(prompt(`Informe a sua nota.`));
     
-
     //Processamento
+
+    (isNaN(nota) || nota < 0 || nota > 10) 
+    ? alert(`Valor Inválido`) 
+    : nota >= 9
+    ? alert("Sua nota convertida para conceito é: A")
+    : nota >= 8 
+    ? alert("Sua nota convertida para conceito é: B")
+    : nota >= 7
+    ? alert("Sua nota convertida para conceito é: C")
+    : nota >= 6
+    ? alert("Sua nota convertida para conceito é: D")
+    : alert("Sua nota convertida para conceito é: E")
+
 
     
     //Saída
